@@ -1,0 +1,92 @@
+{
+  "Hero": {
+    "greeting": "Olá, eu sou Rodrigo",
+    "statement": "Sou engenheiro de software criando <systems>sistemas escaláveis</systems> e transformando <problems>problemas complexos</problems> em soluções simples.",
+    "specialties": "BACKEND · ARQUITETURA · ENGENHARIA",
+    "portraitAlt": "Ilustração de Rodrigo, de óculos e jaqueta preta",
+    "languageLabel": "Selecionar idioma",
+    "homeLabel": "Rodrigo — início"
+  },
+  "About": {
+    "title": "Além do código",
+    "lead": "Acredito que um bom software começa com <highlight>a compreensão dos problemas</highlight>, não apenas com código.",
+    "background": "Sou um engenheiro backend do Brasil, trabalhando com arquitetura de software, sistemas distribuídos e tecnologia financeira.",
+    "approach": "Gosto de enfrentar desafios complexos, tomar decisões técnicas bem pensadas e colaborar com equipes para construir soluções confiáveis, fáceis de manter e com propósito.",
+    "architecture": {
+      "title": "Arquitetura",
+      "description": "Projetando sistemas preparados para evoluir."
+    },
+    "engineering": {
+      "title": "Engenharia",
+      "description": "Construindo soluções backend confiáveis."
+    },
+    "collaboration": {
+      "title": "Colaboração",
+      "description": "Compartilhando conhecimento e crescendo juntos."
+    },
+    "problemSolving": {
+      "title": "Resolução de problemas",
+      "description": "Encontrando clareza em desafios complexos."
+    }
+  },
+  "Projects": {
+    "eyebrow": "PROJETOS SELECIONADOS",
+    "titleLine1": "Projetos pessoais",
+    "titleLine2": "criados com propósito.",
+    "intro": "Ideias que transformei em produtos reais para aprender, resolver problemas e criar valor.",
+    "viewAll": "Ver todos os projetos",
+    "github": "Ver no GitHub",
+    "visit": "Visitar site",
+    "technologies": "Tecnologias e áreas do projeto",
+    "decore": {
+      "category": "EXPERIÊNCIA WEB",
+      "description": "Um site para apresentar e comercializar artes em madeira feitas à mão, com foco na experiência de navegação e na apresentação dos produtos.",
+      "note": "Feito à mão, com propósito",
+      "imageAlt": "Página inicial da Decorê Arts com artes personalizadas em madeira"
+    },
+    "glic": {
+      "category": "APLICATIVO DE SAÚDE",
+      "description": "Um aplicativo mobile para acompanhar medições de glicose, com classificação automática, histórico e relatórios para apoiar o acompanhamento médico.",
+      "note": "Acompanhe sua saúde",
+      "imageAlt": "Tela do Glic com listagem de medidas de glicose e botão para baixar relatório"
+    },
+    "specialday": {
+      "category": "PRODUTO DIGITAL",
+      "description": "Uma plataforma para criar cartões digitais personalizados, transformando mensagens e fotos em experiências memoráveis para diferentes ocasiões.",
+      "note": "Transforme momentos em memórias",
+      "imageAlt": "Página inicial do SpecialDayGiftCard para criar presentes digitais personalizados"
+    }
+  },
+  "Experience": {
+    "title": "Minha trajetória até aqui.",
+    "intro": "Construindo software, resolvendo desafios complexos e crescendo a cada experiência.",
+    "role": "Desenvolvedor Backend",
+    "technologies": "Tecnologias e áreas de atuação",
+    "payments": "Pagamentos",
+    "hst": {
+      "period": "2022 — Atual",
+      "description": "Modernizando plataformas financeiras e contribuindo para arquitetura, sistemas distribuídos e decisões técnicas.",
+      "achievement": "Consolidei 14 microsserviços em 5 e reduzi 3 stacks de tecnologia para 1."
+    },
+    "tinnova": {
+      "period": "2022",
+      "description": "Desenvolvi soluções de pagamento com Kotlin, implementando regras de negócio financeiras e integrações assíncronas."
+    },
+    "b2ml": {
+      "period": "2020 — 2021*",
+      "description": "Desenvolvi o Doctor247, uma plataforma de gestão de saúde que atende 12 clínicas e hospitais."
+    }
+  },
+  "Contact": {
+    "title": "Tem algo em mente?",
+    "invitation": "Vamos conversar.",
+    "description": "Seja uma oportunidade interessante, um projeto desafiador ou apenas uma conversa sobre tecnologia, vou adorar ouvir você.",
+    "socialLabel": "Redes sociais",
+    "backToTop": "VOLTAR AO TOPO",
+    "homeLabel": "Rodrigo — voltar ao início"
+  },
+  "Metadata": {
+    "title": "Rodrigo | Engenheiro de Software",
+    "description": "Engenheiro de software criando sistemas escaláveis e transformando problemas complexos em soluções simples."
+  }
+}

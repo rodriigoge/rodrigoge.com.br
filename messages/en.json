@@ -1,0 +1,92 @@
+{
+  "Hero": {
+    "greeting": "Hey, I’m Rodrigo",
+    "statement": "I’m a software engineer building <systems>scalable systems</systems> and turning <problems>complex problems</problems> into simple solutions.",
+    "specialties": "BACKEND · ARCHITECTURE · ENGINEERING",
+    "portraitAlt": "Illustration of Rodrigo wearing glasses and a black jacket",
+    "languageLabel": "Select language",
+    "homeLabel": "Rodrigo — home"
+  },
+  "About": {
+    "title": "Beyond the code",
+    "lead": "I believe great software starts with <highlight>understanding problems</highlight>, not just writing code.",
+    "background": "I'm a backend engineer from Brazil, working on software architecture, distributed systems, and financial technology.",
+    "approach": "I enjoy tackling complex challenges, making thoughtful technical decisions, and collaborating with teams to build solutions that are reliable, maintainable, and meaningful.",
+    "architecture": {
+      "title": "Architecture",
+      "description": "Designing systems built for evolution."
+    },
+    "engineering": {
+      "title": "Engineering",
+      "description": "Building reliable backend solutions."
+    },
+    "collaboration": {
+      "title": "Collaboration",
+      "description": "Sharing knowledge and growing together."
+    },
+    "problemSolving": {
+      "title": "Problem Solving",
+      "description": "Finding clarity in complex challenges."
+    }
+  },
+  "Projects": {
+    "eyebrow": "SELECTED PROJECTS",
+    "titleLine1": "Personal projects",
+    "titleLine2": "built with purpose.",
+    "intro": "Ideas I turned into real products to learn, solve problems and create value.",
+    "viewAll": "View all projects",
+    "github": "View on GitHub",
+    "visit": "Visit website",
+    "technologies": "Project technologies and areas",
+    "decore": {
+      "category": "WEB EXPERIENCE",
+      "description": "A website to showcase and commercialize handcrafted wooden arts, with a focus on navigation experience and product presentation.",
+      "note": "Handcrafted with purpose",
+      "imageAlt": "Decorê Arts homepage showcasing personalized wooden art"
+    },
+    "glic": {
+      "category": "HEALTH APPLICATION",
+      "description": "A mobile application for tracking glucose measurements, with automatic classification, historical data, and health reports to support medical follow-up.",
+      "note": "Track your health",
+      "imageAlt": "Glic screen listing glucose measurements and a download report button"
+    },
+    "specialday": {
+      "category": "DIGITAL PRODUCT",
+      "description": "A platform to create personalized digital gift cards, transforming messages and photos into memorable experiences for different occasions.",
+      "note": "Turn moments into memories",
+      "imageAlt": "SpecialDayGiftCard homepage for creating personalized digital gifts"
+    }
+  },
+  "Experience": {
+    "title": "The journey so far.",
+    "intro": "Building software, solving complex challenges, and growing through every experience.",
+    "role": "Backend Developer",
+    "technologies": "Technologies and areas of work",
+    "payments": "Payments",
+    "hst": {
+      "period": "2022 — Present",
+      "description": "Modernizing financial platforms and contributing to architecture, distributed systems, and technical decisions.",
+      "achievement": "Consolidated 14 microservices into 5 and reduced 3 technology stacks to 1."
+    },
+    "tinnova": {
+      "period": "2022",
+      "description": "Developed payment solutions with Kotlin, implementing financial business rules and asynchronous integrations."
+    },
+    "b2ml": {
+      "period": "2020 — 2021*",
+      "description": "Developed Doctor247, a healthcare management platform supporting 12 clinics and hospitals."
+    }
+  },
+  "Contact": {
+    "title": "Have something in mind?",
+    "invitation": "Let's talk.",
+    "description": "Whether it's an interesting opportunity, a challenging project, or just a conversation about technology, I'd love to hear from you.",
+    "socialLabel": "Social links",
+    "backToTop": "BACK TO TOP",
+    "homeLabel": "Rodrigo — back to home"
+  },
+  "Metadata": {
+    "title": "Rodrigo | Software Engineer",
+    "description": "Software engineer building scalable systems and turning complex problems into simple solutions."
+  }
+}

@@ -1,0 +1,36 @@
+import {getTranslations} from 'next-intl/server';
+import {Blocks, CodeXml, Lightbulb, UsersRound} from 'lucide-react';
+import {AnimatedPrinciple} from './animated-principle';
+
+const principles = [
+  {key: 'architecture', Icon: Blocks},
+  {key: 'engineering', Icon: CodeXml},
+  {key: 'collaboration', Icon: UsersRound},
+  {key: 'problemSolving', Icon: Lightbulb}
+] as const;
+
+export async function About() {
+  const t = await getTranslations('About');
+
+  return (
+    <section id="about" className="about" aria-labelledby="about-heading">
+      <div className="about-introduction">
+        <h2 id="about-heading">{t('title')}</h2>
+        <p className="about-lead">
+          {t.rich('lead', {highlight: (chunks) => <span>{chunks}</span>})}
+        </p>
+        <p className="about-description">{t('background')}</p>
+        <p className="about-description">{t('approach')}</p>
+      </div>
+
+      <ul className="about-principles">
+        {principles.map(({key, Icon}, index) => (
+          <AnimatedPrinciple key={key} index={index}>
+            <h3><Icon size={16} strokeWidth={1.7} aria-hidden="true" />{t(`${key}.title`)}</h3>
+            <p>{t(`${key}.description`)}</p>
+          </AnimatedPrinciple>
+        ))}
+      </ul>
+    </section>
+  );
+}
