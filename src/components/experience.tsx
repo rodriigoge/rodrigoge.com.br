@@ -1,4 +1,5 @@
 import {getTranslations} from 'next-intl/server';
+import {ScrollReveal} from './scroll-reveal';
 
 const experiences = [
   {key: 'hst', company: 'HST Card Technology', current: true},
@@ -10,15 +11,15 @@ export async function Experience() {
   const t = await getTranslations('Experience');
 
   return (
-    <section id="experience" className="experience" aria-labelledby="experience-heading">
-      <header className="experience-header">
+    <ScrollReveal as="section" id="experience" className="experience" aria-labelledby="experience-heading" distance={0}>
+      <ScrollReveal as="header" className="experience-header">
         <h2 id="experience-heading">{t('title')}</h2>
         <p>{t('intro')}</p>
-      </header>
+      </ScrollReveal>
 
       <ol className="experience-timeline">
-        {experiences.map(({key, company, current}) => (
-          <li key={key} className={`experience-entry${current ? ' experience-current' : ''}`}>
+        {experiences.map(({key, company, current}, index) => (
+          <ScrollReveal as="li" key={key} className={`experience-entry${current ? ' experience-current' : ''}`} delay={index * 0.1}>
             <div className="experience-entry-heading">
               <h3>{company}</h3>
               <span className="experience-period">{t(`${key}.period`)}</span>
@@ -28,9 +29,9 @@ export async function Experience() {
             {key === 'hst' && <p className="experience-achievement">{t('hst.achievement')}</p>}
             {key === 'tinnova' && t.has('tinnova.achievement') && <p className="experience-achievement">{t('tinnova.achievement')}</p>}
             {key === 'b2ml' && t.has('b2ml.achievement') && <p className="experience-achievement">{t('b2ml.achievement')}</p>}
-          </li>
+          </ScrollReveal>
         ))}
       </ol>
-    </section>
+    </ScrollReveal>
   );
 }

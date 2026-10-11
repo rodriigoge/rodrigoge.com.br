@@ -25,7 +25,7 @@ export function Hero() {
   return (
     <section id="top" className="hero" aria-labelledby="hero-heading">
       <header className="hero-header">
-        <Link href="/" className="hero-logo" aria-label={t('homeLabel')}>RG.</Link>
+        <Link href="/" className="hero-logo" aria-label={t('homeLabel')}>Rodrigo Gouveia Estevão</Link>
         <nav className="hero-languages" aria-label={t('languageLabel')}>
           <Link href="/" locale="en" lang="en" aria-label="English" aria-current={locale === 'en' ? 'page' : undefined}>EN</Link>
           <span aria-hidden="true">/</span>

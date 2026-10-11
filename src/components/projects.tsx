@@ -2,6 +2,7 @@ import Image from 'next/image';
 import {ArrowUpRight} from 'lucide-react';
 import {getTranslations} from 'next-intl/server';
 import {allProjectsUrl, projects} from '@/data/projects';
+import {ScrollReveal} from './scroll-reveal';
 
 function ProjectLink({url, children}: {url: string | null; children: React.ReactNode}) {
   if (!url) return null;
@@ -22,19 +23,19 @@ function Sketch() {
 export async function Projects() {
   const t = await getTranslations('Projects');
   return (
-    <section id="projects" className="projects" aria-labelledby="projects-heading">
-      <header className="projects-header">
+    <ScrollReveal as="section" id="projects" className="projects" aria-labelledby="projects-heading" distance={0}>
+      <ScrollReveal as="header" className="projects-header">
         <div>
           <p className="projects-eyebrow"><span>01</span> / {t('eyebrow')}</p>
           <h2 id="projects-heading">{t('titleLine1')} {t('titleLine2')}</h2>
           <p className="projects-intro">{t('intro')}</p>
         </div>
         <ProjectLink url={allProjectsUrl}>{t('viewAll')}</ProjectLink>
-      </header>
+      </ScrollReveal>
 
       <div className="projects-grid">
-        {projects.map((project) => (
-          <article key={project.id} className={`project-card project-${project.id}`} aria-labelledby={`project-${project.id}-title`}>
+        {projects.map((project, index) => (
+          <ScrollReveal as="article" key={project.id} className={`project-card project-${project.id}`} aria-labelledby={`project-${project.id}-title`} delay={index * 0.1}>
             <svg className="project-scribble" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
               <path pathLength="1" vectorEffect="non-scaling-stroke" d="M28 7 C240 3 590 11 964 6 Q990 5 991 24 C987 67 996 126 990 177 Q987 193 968 191 C699 197 344 188 32 194 Q9 195 10 177 C14 115 5 61 11 25 Q12 8 35 9" />
               <path pathLength="1" vectorEffect="non-scaling-stroke" d="M54 11 C301 7 653 13 959 10 Q985 9 985 29 L987 174 Q985 188 964 187 C652 193 317 185 37 190 Q15 190 16 172 L15 29 Q16 13 38 13" />
@@ -63,9 +64,9 @@ export async function Projects() {
               </ul>
               <ProjectLink url={project.url}>{t(project.id === 'glic' ? 'github' : 'visit')}</ProjectLink>
             </div>
-          </article>
+          </ScrollReveal>
         ))}
       </div>
-    </section>
+    </ScrollReveal>
   );
 }

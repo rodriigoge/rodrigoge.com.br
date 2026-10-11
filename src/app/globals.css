@@ -27,7 +27,7 @@ a:focus-visible { outline: 2px solid #91a58a; outline-offset: 7px; border-radius
   justify-content: space-between;
   padding: 1.72vw 4.85vw 0 5.32vw;
 }
-.hero-logo { font-size: clamp(26px, 1.85vw, 42px); font-weight: 500; line-height: 1.3; letter-spacing: -0.055em; }
+.hero-logo { font-family: var(--font-twinkle-star), cursive; font-size: clamp(26px, 1.85vw, 42px); font-weight: 400; line-height: 1.3; }
 .hero-languages { display: flex; align-items: center; gap: 0.72vw; font-size: clamp(14px, 0.98vw, 22px); line-height: 1.5; color: #777878; }
 .hero-languages a { position: relative; transition: color 180ms ease; }
 .hero-languages a:hover, .hero-languages a[aria-current="page"] { color: #eeeeed; }
@@ -62,7 +62,7 @@ a:focus-visible { outline: 2px solid #91a58a; outline-offset: 7px; border-radius
 @media (max-width: 700px) {
   .hero { min-height: 100svh; }
   .hero-header { padding: 24px 7vw 0; }
-  .hero-logo { font-size: 30px; }
+  .hero-logo { max-width: calc(100% - 90px); font-size: clamp(22px, 5vw, 30px); }
   .hero-languages { gap: 12px; font-size: 14px; }
   .hero-copy { margin: 60px 7vw 0; width: 86vw; padding-bottom: 0; }
   .hero-greeting { font-size: 25px; margin-bottom: 26px; }
@@ -236,7 +236,7 @@ html { scroll-behavior: smooth; }
 .contact-socials svg { color: #a4b9a3; flex-shrink: 0; }
 .contact-back-top { display: inline-flex; align-items: center; gap: 6px; color: #929ba4; font-size: 12px; line-height: 1.5; white-space: nowrap; }
 .contact-bottom { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 28px 0 20px; border-top: 1px solid #333638; }
-.contact-logo { font-size: 15px; font-weight: 600; letter-spacing: -0.04em; }
+.contact-logo { font-family: var(--font-twinkle-star), cursive; font-size: 24px; font-weight: 400; line-height: 1.3; }
 .contact-bottom small { color: #929ba4; font-size: 10px; line-height: 1.5; text-transform: uppercase; text-align: right; }
 .contact-footer a { transition: color 200ms ease; }
 @media (hover: hover) and (pointer: fine) {
