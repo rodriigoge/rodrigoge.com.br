@@ -47,8 +47,8 @@ export function Hero() {
         <p className="hero-specialties">{t('specialties')}</p>
       </motion.div>
 
-      <div className="hero-portrait">
-        <Image src="/images/rodrigo-cutout.png" alt={t('portraitAlt')} fill priority
+      <div className="hero-portrait hero-animation">
+        <Image src={reducedMotion ? '/images/rodrigo-skateboard-still.png' : '/images/rodrigo-skateboard.gif'} alt={t('portraitAlt')} fill priority unoptimized
           sizes="(max-width: 700px) 100vw, 42vw" />
       </div>
     </section>

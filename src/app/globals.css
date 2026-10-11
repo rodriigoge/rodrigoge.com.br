@@ -42,6 +42,7 @@ a:focus-visible { outline: 2px solid #91a58a; outline-offset: 7px; border-radius
 .hero-specialties { margin: 5.8vw 0 0; font-size: clamp(12px, 0.99vw, 22px); line-height: 1.5; color: #8b8c8d; letter-spacing: 0.095em; word-spacing: 0.32em; }
 .hero-portrait { position: absolute; z-index: 1; right: 3.8vw; top: 3.45vw; width: 40vw; height: 38.7vw; pointer-events: none; }
 .hero-portrait img { object-fit: contain; object-position: top center; }
+.hero-portrait.hero-animation { top: 3.45vw; height: 29vw; }
 
 @media (min-width: 2300px) {
   .hero-greeting { font-size: 1.98vw; }
@@ -56,6 +57,7 @@ a:focus-visible { outline: 2px solid #91a58a; outline-offset: 7px; border-radius
   .hero-statement { font-size: 3.3vw; }
   .hero-specialties { margin-top: 52px; font-size: 11px; }
   .hero-portrait { top: 78px; right: -3vw; width: 44vw; height: 48vw; }
+  .hero-portrait.hero-animation { top: 78px; height: 39vw; }
 }
 @media (max-width: 700px) {
   .hero { min-height: 100svh; }
@@ -67,6 +69,7 @@ a:focus-visible { outline: 2px solid #91a58a; outline-offset: 7px; border-radius
   .hero-statement { font-size: clamp(29px, 6.6vw, 44px); line-height: 1.23; }
   .hero-specialties { margin-top: 36px; font-size: 10px; letter-spacing: 0.07em; word-spacing: 0.1em; }
   .hero-portrait { position: relative; top: auto; right: auto; width: 94vw; height: 91vw; margin: 38px 0 -18vw 9vw; }
+  .hero-portrait.hero-animation { top: auto; width: 86vw; height: 76vw; margin: 38px 7vw 0; }
 }
 .about {
   margin: 10px 4.85vw 0 5.32vw;

@@ -31,6 +31,10 @@ substitui o português na página principal.
 - `messages/pt.json` e `messages/en.json`: textos e metadados.
 - `public/images/rodrigo-cutout.png`: retrato com transparência preparado
   com imagegen a partir da ilustração fornecida.
+- `public/images/rodrigo-skateboard.gif`: animação da Hero com fundo transparente.
+- `public/images/rodrigo-skateboard-still.png`: alternativa sem movimento.
+- `scripts/prepare-hero-gif.cjs`: preparação quadro a quadro do GIF original,
+  usando Sharp, preservando os intervalos e a repetição.
 
 ## Vercel
 

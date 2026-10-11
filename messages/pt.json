@@ -1,91 +1,91 @@
 {
-  "Hero": {
-    "greeting": "Olá, eu sou Rodrigo",
-    "statement": "Sou engenheiro de software criando <systems>sistemas escaláveis</systems> e transformando <problems>problemas complexos</problems> em soluções simples.",
-    "specialties": "BACKEND · ARQUITETURA · ENGENHARIA",
-    "portraitAlt": "Ilustração de Rodrigo, de óculos e jaqueta preta",
-    "languageLabel": "Selecionar idioma",
-    "homeLabel": "Rodrigo — início"
-  },
-  "About": {
-    "title": "Além do código",
-    "lead": "Gosto de transformar ideias em soluções que realmente funcionam. O que mais me motiva no desenvolvimento de software é a possibilidade de aprender continuamente e explorar diferentes caminhos para resolver problemas.",
-    "background": "Ao longo da minha trajetória, venho trabalhando com desenvolvimento backend, utilizando tecnologias como <strong>Java, Kotlin, Spring Boot, Kafka e RabbitMQ</strong>, principalmente em sistemas distribuídos e soluções para o setor financeiro. Mais do que desenvolver funcionalidades, valorizo a troca de conhecimento, a colaboração e a construção de software simples, confiável e preparado para evoluir.",
-    "architecture": {
-      "title": "Arquitetura",
-      "description": "Projetando sistemas preparados para evoluir."
-    },
-    "engineering": {
-      "title": "Engenharia",
-      "description": "Construindo soluções backend confiáveis."
-    },
-    "collaboration": {
-      "title": "Colaboração",
-      "description": "Compartilhando conhecimento e crescendo juntos."
-    },
-    "problemSolving": {
-      "title": "Resolução de problemas",
-      "description": "Encontrando clareza em desafios complexos."
-    }
-  },
-  "Projects": {
-    "eyebrow": "PROJETOS SELECIONADOS",
-    "titleLine1": "Projetos pessoais",
-    "titleLine2": "criados com propósito.",
-    "intro": "Ideias que transformei em produtos reais para aprender, resolver problemas e criar valor.",
-    "viewAll": "Ver todos os projetos",
-    "github": "Ver no GitHub",
-    "visit": "Visitar site",
-    "technologies": "Tecnologias e áreas do projeto",
-    "decore": {
-      "category": "EXPERIÊNCIA WEB",
-      "description": "Um site para apresentar e comercializar artes em madeira feitas à mão, com foco na experiência de navegação e na apresentação dos produtos.",
-      "note": "Feito à mão, com propósito",
-      "imageAlt": "Página inicial da Decorê Arts com artes personalizadas em madeira"
-    },
-    "glic": {
-      "category": "APLICATIVO DE SAÚDE",
-      "description": "Um aplicativo mobile para acompanhar medições de glicose, com classificação automática, histórico e relatórios para apoiar o acompanhamento médico.",
-      "note": "Acompanhe sua saúde",
-      "imageAlt": "Tela do Glic com listagem de medidas de glicose e botão para baixar relatório"
-    },
-    "specialday": {
-      "category": "PRODUTO DIGITAL",
-      "description": "Uma plataforma para criar cartões digitais personalizados, transformando mensagens e fotos em experiências memoráveis para diferentes ocasiões.",
-      "note": "Transforme momentos em memórias",
-      "imageAlt": "Página inicial do SpecialDayGiftCard para criar presentes digitais personalizados"
-    }
-  },
-  "Experience": {
-    "title": "Minha trajetória até aqui.",
-    "intro": "Construindo software, resolvendo desafios complexos e crescendo a cada experiência.",
-    "role": "Desenvolvedor Backend",
-    "hst": {
-      "period": "Jul/2022 - Atual",
-      "description": "Desenvolvimento e evolução de sistemas distribuídos no setor financeiro, com foco na modernização de arquiteturas, simplificação de soluções e confiabilidade.",
-      "achievement": "Participação em decisões arquiteturais, definição de soluções técnicas, integrações entre serviços e resolução de desafios complexos."
-    },
-    "tinnova": {
-      "period": "Jan/2022 - Jun/2022",
-      "description": "Desenvolvi soluções backend para o setor financeiro, implementando regras comerciais e integrações assíncronas dos sistemas.",
-      "achievement": "Colaboração com equipes técnicas e de negócio na definição de soluções e resolução de desafios."
-    },
-    "b2ml": {
-      "period": "Jun/2020 - Dez/2021",
-      "description": "Desenvolvimento e evolução de uma plataforma de gestão hospitalar, contribuindo para a digitalização de processos, melhoria da usabilidade e eficiência operacional.",
-      "achievement": "Participação na definição de soluções junto à equipe de produto e no treinamento técnico de novos desenvolvedores."
-    }
-  },
-  "Contact": {
-    "title": "Tem algo em mente?",
-    "invitation": "Vamos conversar.",
-    "description": "Tem algum assunto interessante em mente? Tecnologia, experiências ou boas ideias — vamos conversar!",
-    "socialLabel": "Redes sociais",
-    "backToTop": "VOLTAR AO TOPO",
-    "homeLabel": "Rodrigo — voltar ao início"
-  },
-  "Metadata": {
-    "title": "Rodrigo | Engenheiro de Software",
-    "description": "Engenheiro de software criando sistemas escaláveis e transformando problemas complexos em soluções simples."
-  }
+	"Hero": {
+		"greeting": "Olá, eu sou Rodrigo",
+		"statement": "Engenheiro de software criando <systems>sistemas escaláveis</systems> e transformando <problems>problemas complexos</problems> em soluções simples.",
+		"specialties": "BACKEND · ARQUITETURA · ENGENHARIA",
+		"portraitAlt": "Animação de Rodrigo sentado em um skate, passando de rabisco a ilustração colorida",
+		"languageLabel": "Selecionar idioma",
+		"homeLabel": "Rodrigo — início"
+	},
+	"About": {
+		"title": "Além do código",
+		"lead": "Gosto de transformar ideias em soluções que realmente funcionam. O que mais me motiva no desenvolvimento de software é a possibilidade de aprender continuamente e explorar diferentes caminhos para resolver problemas.",
+		"background": "Ao longo da minha trajetória, venho trabalhando com desenvolvimento backend, utilizando tecnologias como <strong>Java, Kotlin, Spring Boot, Kafka e RabbitMQ</strong>, principalmente em sistemas distribuídos e soluções para o setor financeiro. Mais do que desenvolver funcionalidades, valorizo a troca de conhecimento, a colaboração e a construção de software simples, confiável e preparado para evoluir.",
+		"architecture": {
+			"title": "Arquitetura",
+			"description": "Projetando sistemas preparados para evoluir."
+		},
+		"engineering": {
+			"title": "Engenharia",
+			"description": "Construindo soluções backend confiáveis."
+		},
+		"collaboration": {
+			"title": "Colaboração",
+			"description": "Compartilhando conhecimento e crescendo juntos."
+		},
+		"problemSolving": {
+			"title": "Resolução de problemas",
+			"description": "Encontrando clareza em desafios complexos."
+		}
+	},
+	"Projects": {
+		"eyebrow": "PROJETOS SELECIONADOS",
+		"titleLine1": "Projetos pessoais",
+		"titleLine2": "criados com propósito.",
+		"intro": "Ideias que transformei em produtos reais para aprender, resolver problemas e criar valor.",
+		"viewAll": "Ver todos os projetos",
+		"github": "Ver no GitHub",
+		"visit": "Visitar site",
+		"technologies": "Tecnologias e áreas do projeto",
+		"decore": {
+			"category": "EXPERIÊNCIA WEB",
+			"description": "Um site para apresentar e comercializar artes em madeira feitas à mão, com foco na experiência de navegação e na apresentação dos produtos.",
+			"note": "Feito à mão, com propósito",
+			"imageAlt": "Página inicial da Decorê Arts com artes personalizadas em madeira"
+		},
+		"glic": {
+			"category": "APLICATIVO DE SAÚDE",
+			"description": "Um aplicativo mobile para acompanhar medições de glicose, com classificação automática, histórico e relatórios para apoiar o acompanhamento médico.",
+			"note": "Acompanhe sua saúde",
+			"imageAlt": "Tela do Glic com listagem de medidas de glicose e botão para baixar relatório"
+		},
+		"specialday": {
+			"category": "PRODUTO DIGITAL",
+			"description": "Uma plataforma para criar cartões digitais personalizados, transformando mensagens e fotos em experiências memoráveis para diferentes ocasiões.",
+			"note": "Transforme momentos em memórias",
+			"imageAlt": "Página inicial do SpecialDayGiftCard para criar presentes digitais personalizados"
+		}
+	},
+	"Experience": {
+		"title": "Minha trajetória até aqui.",
+		"intro": "Construindo software, resolvendo desafios complexos e crescendo a cada experiência.",
+		"role": "Desenvolvedor Backend",
+		"hst": {
+			"period": "Jul/2022 - Atual",
+			"description": "Desenvolvimento e evolução de sistemas distribuídos no setor financeiro, com foco na modernização de arquiteturas, simplificação de soluções e confiabilidade.",
+			"achievement": "Participação em decisões arquiteturais, definição de soluções técnicas, integrações entre serviços e resolução de desafios complexos."
+		},
+		"tinnova": {
+			"period": "Jan/2022 - Jun/2022",
+			"description": "Desenvolvi soluções backend para o setor financeiro, implementando regras comerciais e integrações assíncronas dos sistemas.",
+			"achievement": "Colaboração com equipes técnicas e de negócio na definição de soluções e resolução de desafios."
+		},
+		"b2ml": {
+			"period": "Jun/2020 - Dez/2021",
+			"description": "Desenvolvimento e evolução de uma plataforma de gestão hospitalar, contribuindo para a digitalização de processos, melhoria da usabilidade e eficiência operacional.",
+			"achievement": "Participação na definição de soluções junto à equipe de produto e no treinamento técnico de novos desenvolvedores."
+		}
+	},
+	"Contact": {
+		"title": "Tem algo em mente?",
+		"invitation": "Vamos conversar.",
+		"description": "Tem algum assunto interessante em mente? Tecnologia, experiências ou boas ideias — vamos conversar!",
+		"socialLabel": "Redes sociais",
+		"backToTop": "VOLTAR AO TOPO",
+		"homeLabel": "Rodrigo — voltar ao início"
+	},
+	"Metadata": {
+		"title": "Rodrigo | Engenheiro de Software",
+		"description": "Engenheiro de software criando sistemas escaláveis e transformando problemas complexos em soluções simples."
+	}
 }
