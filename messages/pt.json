@@ -9,9 +9,8 @@
   },
   "About": {
     "title": "Além do código",
-    "lead": "Acredito que um bom software começa com <highlight>a compreensão dos problemas</highlight>, não apenas com código.",
-    "background": "Sou um engenheiro backend do Brasil, trabalhando com arquitetura de software, sistemas distribuídos e tecnologia financeira.",
-    "approach": "Gosto de enfrentar desafios complexos, tomar decisões técnicas bem pensadas e colaborar com equipes para construir soluções confiáveis, fáceis de manter e com propósito.",
+    "lead": "Gosto de transformar ideias em soluções que realmente funcionam. O que mais me motiva no desenvolvimento de software é a possibilidade de aprender continuamente e explorar diferentes caminhos para resolver problemas.",
+    "background": "Ao longo da minha trajetória, venho trabalhando com desenvolvimento backend, utilizando tecnologias como <strong>Java, Kotlin, Spring Boot, Kafka e RabbitMQ</strong>, principalmente em sistemas distribuídos e soluções para o setor financeiro. Mais do que desenvolver funcionalidades, valorizo a troca de conhecimento, a colaboração e a construção de software simples, confiável e preparado para evoluir.",
     "architecture": {
       "title": "Arquitetura",
       "description": "Projetando sistemas preparados para evoluir."

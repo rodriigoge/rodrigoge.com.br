@@ -19,8 +19,8 @@ export async function About() {
         <p className="about-lead">
           {t.rich('lead', {highlight: (chunks) => <span>{chunks}</span>})}
         </p>
-        <p className="about-description">{t('background')}</p>
-        <p className="about-description">{t('approach')}</p>
+        <p className="about-description">{t.rich('background', {strong: (chunks) => <strong>{chunks}</strong>})}</p>
+        {t.has('approach') && <p className="about-description">{t('approach')}</p>}
       </div>
 
       <ul className="about-principles">

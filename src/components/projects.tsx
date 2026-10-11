@@ -35,6 +35,10 @@ export async function Projects() {
       <div className="projects-grid">
         {projects.map((project) => (
           <article key={project.id} className={`project-card project-${project.id}`} aria-labelledby={`project-${project.id}-title`}>
+            <svg className="project-scribble" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
+              <path pathLength="1" vectorEffect="non-scaling-stroke" d="M28 7 C240 3 590 11 964 6 Q990 5 991 24 C987 67 996 126 990 177 Q987 193 968 191 C699 197 344 188 32 194 Q9 195 10 177 C14 115 5 61 11 25 Q12 8 35 9" />
+              <path pathLength="1" vectorEffect="non-scaling-stroke" d="M54 11 C301 7 653 13 959 10 Q985 9 985 29 L987 174 Q985 188 964 187 C652 193 317 185 37 190 Q15 190 16 172 L15 29 Q16 13 38 13" />
+            </svg>
             <div className="project-artwork">
               <span className="project-note" aria-hidden="true">{t(`${project.id}.note`)}</span>
               <Sketch />
