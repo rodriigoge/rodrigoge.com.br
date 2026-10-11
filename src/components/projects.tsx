@@ -26,7 +26,7 @@ export async function Projects() {
       <header className="projects-header">
         <div>
           <p className="projects-eyebrow"><span>01</span> / {t('eyebrow')}</p>
-          <h2 id="projects-heading">{t('titleLine1')}<br />{t('titleLine2')}</h2>
+          <h2 id="projects-heading">{t('titleLine1')} {t('titleLine2')}</h2>
           <p className="projects-intro">{t('intro')}</p>
         </div>
         <ProjectLink url={allProjectsUrl}>{t('viewAll')}</ProjectLink>

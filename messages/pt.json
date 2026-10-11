@@ -61,20 +61,20 @@
     "title": "Minha trajetória até aqui.",
     "intro": "Construindo software, resolvendo desafios complexos e crescendo a cada experiência.",
     "role": "Desenvolvedor Backend",
-    "technologies": "Tecnologias e áreas de atuação",
-    "payments": "Pagamentos",
     "hst": {
-      "period": "2022 — Atual",
-      "description": "Modernizando plataformas financeiras e contribuindo para arquitetura, sistemas distribuídos e decisões técnicas.",
-      "achievement": "Consolidei 14 microsserviços em 5 e reduzi 3 stacks de tecnologia para 1."
+      "period": "Jul/2022 - Atual",
+      "description": "Desenvolvimento e evolução de sistemas distribuídos no setor financeiro, com foco na modernização de arquiteturas, simplificação de soluções e confiabilidade.",
+      "achievement": "Participação em decisões arquiteturais, definição de soluções técnicas, integrações entre serviços e resolução de desafios complexos."
     },
     "tinnova": {
-      "period": "2022",
-      "description": "Desenvolvi soluções de pagamento com Kotlin, implementando regras de negócio financeiras e integrações assíncronas."
+      "period": "Jan/2022 - Jun/2022",
+      "description": "Desenvolvi soluções backend para o setor financeiro, implementando regras comerciais e integrações assíncronas dos sistemas.",
+      "achievement": "Colaboração com equipes técnicas e de negócio na definição de soluções e resolução de desafios."
     },
     "b2ml": {
-      "period": "2020 — 2021*",
-      "description": "Desenvolvi o Doctor247, uma plataforma de gestão de saúde que atende 12 clínicas e hospitais."
+      "period": "Jun/2020 - Dez/2021",
+      "description": "Desenvolvimento e evolução de uma plataforma de gestão hospitalar, contribuindo para a digitalização de processos, melhoria da usabilidade e eficiência operacional.",
+      "achievement": "Participação na definição de soluções junto à equipe de produto e no treinamento técnico de novos desenvolvedores."
     }
   },
   "Contact": {

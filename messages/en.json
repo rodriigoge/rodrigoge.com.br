@@ -61,19 +61,17 @@
     "title": "The journey so far.",
     "intro": "Building software, solving complex challenges, and growing through every experience.",
     "role": "Backend Developer",
-    "technologies": "Technologies and areas of work",
-    "payments": "Payments",
     "hst": {
-      "period": "2022 — Present",
+      "period": "Jul/2022 - Present",
       "description": "Modernizing financial platforms and contributing to architecture, distributed systems, and technical decisions.",
       "achievement": "Consolidated 14 microservices into 5 and reduced 3 technology stacks to 1."
     },
     "tinnova": {
-      "period": "2022",
+      "period": "Jan/2022 - Jun/2022",
       "description": "Developed payment solutions with Kotlin, implementing financial business rules and asynchronous integrations."
     },
     "b2ml": {
-      "period": "2020 — 2021*",
+      "period": "Jun/2020 - Dec/2021",
       "description": "Developed Doctor247, a healthcare management platform supporting 12 clinics and hospitals."
     }
   },

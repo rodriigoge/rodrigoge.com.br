@@ -134,8 +134,8 @@ a:focus-visible { outline: 2px solid #91a58a; outline-offset: 7px; border-radius
 .projects-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; margin-bottom: 30px; }
 .projects-eyebrow, .project-category { margin: 0; font-family: var(--font-geist-mono), monospace; font-size: 12px; line-height: 1.5; letter-spacing: 0.16em; color: #bdc5cf; }
 .projects-eyebrow span, .project-category span { color: #a3e4bc; }
-.projects-header h2 { margin: 12px 0; font-size: clamp(32px, 3.15vw, 52px); line-height: 1.08; letter-spacing: -0.035em; font-weight: 600; }
-.projects-intro { max-width: 550px; margin: 14px 0 0; color: #b1bcc9; font-size: 20px; line-height: 1.45; }
+.projects-header h2 { margin: 12px 0; font-size: 24px; line-height: 1.35; letter-spacing: -0.025em; font-weight: 500; }
+.projects-intro { margin: 14px 0 0; color: #b1bcc9; font-size: 14px; line-height: 1.5; }
 .project-link { display: inline-flex; align-items: center; gap: 12px; width: fit-content; font-size: 14px; line-height: 1.5; }
 .project-link span { border-bottom: 1px solid #68717a; padding-bottom: 3px; }
 .projects-header > .project-link { margin-top: 3px; white-space: nowrap; color: #cbd2db; }
@@ -175,7 +175,6 @@ a:focus-visible { outline: 2px solid #91a58a; outline-offset: 7px; border-radius
 @media (max-width: 600px) {
   .projects { padding: 56px 7vw; }
   .projects-header { flex-direction: column; gap: 20px; }
-  .projects-intro { font-size: 17px; }
   .project-card { grid-template-columns: 1fr; }
   .project-artwork { height: 280px; }
   .project-browser { width: 84%; left: 10%; top: 88px; }
@@ -189,18 +188,27 @@ a:focus-visible { outline: 2px solid #91a58a; outline-offset: 7px; border-radius
 .experience-timeline { position: relative; list-style: none; margin: 24px 0 0; padding: 0 0 0 28px; }
 .experience-entry:not(:last-child)::after { content: ''; position: absolute; left: -21px; top: 14px; bottom: -30px; width: 1px; background: #41494a; }
 .experience-entry { position: relative; padding: 2px 0 0; }
+.experience-scribble { position: absolute; inset: -12px -12px; width: calc(100% + 24px); height: calc(100% + 24px); overflow: visible; pointer-events: none; opacity: 0; transition: opacity 180ms ease; }
+.experience-scribble path { fill: none; stroke: #a4b9a3; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.experience-scribble path + path { stroke-width: 0.8; opacity: 0.45; }
+@media (hover: hover) and (pointer: fine) {
+  .experience-entry:hover .experience-scribble { opacity: 1; }
+  .experience-entry:hover .experience-scribble path { animation: experience-scribble-draw 650ms ease-out forwards; }
+  .experience-entry:hover .experience-scribble path + path { animation-delay: 120ms; }
+}
+@keyframes experience-scribble-draw {
+  to { stroke-dashoffset: 0; }
+}
 .experience-entry + .experience-entry { margin-top: 26px; }
 .experience-entry::before { content: ''; position: absolute; left: -25px; top: 4px; width: 10px; height: 10px; border: 2px solid #74807e; border-radius: 50%; background: #101112; }
 .experience-current::before { background: #a4b9a3; border-color: #a4b9a3; }
 .experience-entry-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
 .experience-entry h3 { margin: 0; font-size: 18px; font-weight: 600; line-height: 1.4; letter-spacing: -0.02em; }
-.experience-period { flex-shrink: 0; padding-top: 1px; font-size: 10px; line-height: 1.5; color: #a6aeb0; }
+.experience-period { flex-shrink: 0; padding-top: 1px; font-size: 12px; line-height: 1.5; color: #a6aeb0; }
 .experience-current .experience-period { color: #b8cab2; }
 .experience-role { margin: 6px 0 12px; font-size: 14px; line-height: 1.5; color: #c9cdca; }
 .experience-description { margin: 0; font-size: 14px; line-height: 1.5; color: #aeb3bc; }
 .experience-achievement { margin: 12px 0 0; font-size: 14px; line-height: 1.5; color: #d3ddd3; }
-.experience-technologies { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 12px 0 0; }
-.experience-technologies li { padding: 3px 9px; border-radius: 20px; background: #252a2d; color: #d1d6d9; font-size: 10px; line-height: 1.4; }
 @media (max-width: 700px) {
   .experience { margin-inline: 7vw; }
 }
@@ -239,6 +247,7 @@ html { scroll-behavior: smooth; }
   .contact-socials a { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
+  .experience-scribble path { stroke-dashoffset: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
