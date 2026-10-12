@@ -37,6 +37,12 @@
 		"github": "Ver no GitHub",
 		"visit": "Visitar site",
 		"technologies": "Tecnologias e áreas do projeto",
+		"stepp": {
+			"category": "APLICATIVO DE HÁBITOS",
+			"description": "Um aplicativo moderno e minimalista para acompanhar hábitos, desenvolvido para ajudar você a criar consistência e alcançar seus objetivos, um dia de cada vez.",
+			"note": "Construa dias melhores",
+			"imageAlt": "Tela do Stepp com hábitos de leitura, corrida, academia e viagem e seu histórico de conclusões"
+		},
 		"decore": {
 			"category": "EXPERIÊNCIA WEB",
 			"description": "Um site para apresentar e comercializar artes em madeira feitas à mão, com foco na experiência de navegação e na apresentação dos produtos.",

@@ -43,10 +43,10 @@ export async function Projects() {
             <div className="project-artwork">
               <span className="project-note" aria-hidden="true">{t(`${project.id}.note`)}</span>
               <Sketch />
-              {project.id === 'glic' ? (
-                <div className="project-phone glic-phone">
+              {project.id === 'glic' || project.id === 'stepp' ? (
+                <div className={`project-phone ${project.id}-phone`}>
                   <div className="phone-camera" />
-                  <Image src="/images/projects/glic.png" alt={t('glic.imageAlt')} width={473} height={1028} sizes="220px" />
+                  <Image src={`/images/projects/${project.id}.png`} alt={t(`${project.id}.imageAlt`)} width={project.id === 'stepp' ? 720 : 473} height={project.id === 'stepp' ? 1600 : 1028} sizes="220px" />
                 </div>
               ) : (
                 <div className="project-browser">
@@ -62,7 +62,7 @@ export async function Projects() {
               <ul className="project-tags" aria-label={t('technologies')}>
                 {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
               </ul>
-              <ProjectLink url={project.url}>{t(project.id === 'glic' ? 'github' : 'visit')}</ProjectLink>
+              <ProjectLink url={project.url}>{t(project.id === 'glic' || project.id === 'stepp' ? 'github' : 'visit')}</ProjectLink>
             </div>
           </ScrollReveal>
         ))}

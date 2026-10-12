@@ -38,6 +38,12 @@
 		"github": "View on GitHub",
 		"visit": "Visit website",
 		"technologies": "Project technologies and areas",
+		"stepp": {
+			"category": "HABIT-TRACKING APPLICATION",
+			"description": "A modern and minimalist habit-tracking application designed to help you build consistency and reach your goals, one day at a time.",
+			"note": "Build better days",
+			"imageAlt": "Stepp screen showing reading, running, gym and travel habits with their completion history"
+		},
 		"decore": {
 			"category": "WEB EXPERIENCE",
 			"description": "A website to showcase and commercialize handcrafted wooden arts, with a focus on navigation experience and product presentation.",

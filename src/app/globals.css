@@ -146,6 +146,8 @@ a:focus-visible { outline: 2px solid #91a58a; outline-offset: 7px; border-radius
 .project-card { --project-accent: #a5c6ec; display: grid; grid-template-columns: 48% 52%; min-width: 0; min-height: 312px; border: 1px solid #333c41; border-radius: 13px; overflow: hidden; background: linear-gradient(120deg, #151b1e, #101417); }
 .project-decore { --project-accent: #dabb93; }
 .project-specialday { --project-accent: #dba5dc; }
+.project-stepp { --project-accent: #b7d6a6; }
+.project-phone.stepp-phone { border-color: #91aa85; }
 .project-artwork { position: relative; min-width: 0; overflow: hidden; background: radial-gradient(ellipse at 50% 65%, color-mix(in srgb, var(--project-accent) 11%, transparent), transparent 75%); }
 .project-note { position: absolute; z-index: 2; top: 20px; left: 20px; max-width: 125px; color: var(--project-accent); font-family: 'Segoe Print', 'Bradley Hand', cursive; font-size: 15px; line-height: 1.3; transform: rotate(-9deg); }
 .project-sketch { position: absolute; inset: 0; width: 100%; height: 100%; stroke: var(--project-accent); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
@@ -165,7 +167,7 @@ a:focus-visible { outline: 2px solid #91a58a; outline-offset: 7px; border-radius
 .project-tags li { padding: 7px 13px; background: #22282d; color: #e1e6ec; border-radius: 30px; font-size: 12px; line-height: 1.4; }
 .project-content .project-link { margin-top: auto; }
 @media (hover: hover) and (pointer: fine) {
-  .project-glic:hover .project-phone { transform: rotate(7deg) translateY(-4px); }
+  .project-card:hover .project-phone { transform: rotate(7deg) translateY(-4px); }
   .project-card:hover .project-browser { transform: rotate(-4deg) translateY(-4px); }
   .project-link:hover { color: #a3e4bc; }
 }
