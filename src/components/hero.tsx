@@ -1,56 +1,130 @@
-'use client';
+'use client'
 
-import Image from 'next/image';
-import {useLocale, useTranslations} from 'next-intl';
-import {motion, useReducedMotion} from 'motion/react';
-import {Link} from '@/i18n/navigation';
-
-function Underline({children}: {children: React.ReactNode}) {
-  return (
-    <span className="hero-underline">
-      {children}
-      <svg aria-hidden="true" viewBox="0 0 500 12" preserveAspectRatio="none">
-        <path d="M2 7 C125 6 305 8 497 6" />
-        <path d="M3 8 C190 9 341 7 483 8" />
-      </svg>
-    </span>
-  );
-}
+import { contact } from '@/data/contact'
+import { Link } from '@/i18n/navigation'
+import { Download } from 'lucide-react'
+import { motion, useReducedMotion } from 'motion/react'
+import { useLocale, useTranslations } from 'next-intl'
+import { HeroPortrait } from './hero-portrait'
+import { Signature } from './signature'
+import { ThemeToggle } from './theme-toggle'
 
 export function Hero() {
-  const t = useTranslations('Hero');
-  const locale = useLocale();
-  const reducedMotion = useReducedMotion();
+	const t = useTranslations('Hero')
+	const locale = useLocale()
+	const reducedMotion = useReducedMotion()
 
-  return (
-    <section id="top" className="hero" aria-labelledby="hero-heading">
-      <header className="hero-header">
-        <Link href="/" className="hero-logo" aria-label={t('homeLabel')}>Rodrigo Gouveia Estevão</Link>
-        <nav className="hero-languages" aria-label={t('languageLabel')}>
-          <Link href="/" locale="en" lang="en" aria-label="English" aria-current={locale === 'en' ? 'page' : undefined}>EN</Link>
-          <span aria-hidden="true">/</span>
-          <Link href="/" locale="pt" lang="pt-BR" aria-label="Português" aria-current={locale === 'pt' ? 'page' : undefined}>PT</Link>
-        </nav>
-      </header>
+	return (
+		<section id="top" className="hero" aria-labelledby="hero-heading">
+			<motion.header
+				className="hero-header"
+				initial={reducedMotion ? false : { opacity: 0, y: 12 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.6, ease: 'easeOut' }}
+			>
+				<Link href="/" className="hero-logo" aria-label={t('homeLabel')}>
+					<Signature />
+				</Link>
+				<div className="hero-tools">
+					<ThemeToggle />
+					<nav className="hero-languages" aria-label={t('languageLabel')}>
+						<Link
+							href="/"
+							locale="en"
+							lang="en"
+							aria-label="English"
+							aria-current={locale === 'en' ? 'page' : undefined}
+						>
+							EN
+						</Link>
+						<span aria-hidden="true">/</span>
+						<Link
+							href="/"
+							locale="pt"
+							lang="pt-BR"
+							aria-label="Português"
+							aria-current={locale === 'pt' ? 'page' : undefined}
+						>
+							PT
+						</Link>
+					</nav>
+					<div className="hero-social">
+						<a className="hero-social-link" href={contact.github} target="_blank" rel="noreferrer">
+							GitHub
+						</a>
+						<a className="hero-social-link hero-social-link-filled" href={contact.linkedin} target="_blank" rel="noreferrer">
+							LinkedIn
+						</a>
+					</div>
+				</div>
+			</motion.header>
 
-      <motion.div className="hero-copy"
-        initial={reducedMotion ? false : {opacity: 0, y: 12}}
-        animate={{opacity: 1, y: 0}}
-        transition={{duration: 0.6, ease: 'easeOut'}}>
-        <p className="hero-greeting">{t('greeting')}</p>
-        <h1 id="hero-heading" className="hero-statement">
-          {t.rich('statement', {
-            systems: (chunks) => <Underline>{chunks}</Underline>,
-            problems: (chunks) => <Underline>{chunks}</Underline>
-          })}
-        </h1>
-        <p className="hero-specialties">{t('specialties')}</p>
-      </motion.div>
+			<motion.div
+				className="hero-copy"
+				initial={reducedMotion ? false : { opacity: 0, y: 12 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.6, ease: 'easeOut' }}
+			>
+				<h1 id="hero-heading" className="hero-name">
+					{t.rich('name', {
+						br: () => <br />,
+						serif: (chunks) => <span className="hero-serif">{chunks}</span>,
+						idea: (chunks) => (
+							<span className="hero-mark">
+								{chunks}
+								<svg aria-hidden="true" viewBox="0 0 200 14" preserveAspectRatio="none">
+									<path pathLength="1" d="M3 10 C 35 4, 65 2, 94 4 S 151 3, 197 9" />
+								</svg>
+							</span>
+						),
+						mark: (chunks) => (
+							<span className="hero-mark">
+								{chunks}
+								<svg
+									aria-hidden="true"
+									viewBox="0 0 200 14"
+									preserveAspectRatio="none"
+								>
+									<path pathLength="1" d="M3 11 Q 100 -5 197 11" />
+								</svg>
+							</span>
+						),
+					})}
+				</h1>
+				<p className="hero-headline">
+					{t.rich('headline', {
+						serif: (chunks) => <span className="hero-serif">{chunks}</span>,
+					})}
+				</p>
+				<div className="hero-actions">
+					<a
+						className="hero-button"
+						href="/cv.pdf"
+						download="Rodrigo-Gouveia-Estevao-CV.pdf"
+					>
+						{t('downloadCv')}
+						<Download aria-hidden="true" size={16} strokeWidth={1.8} />
+					</a>
+					<a className="hero-button hero-button-outline" href="#projects">
+						{t('viewProjects')}
+					</a>
+				</div>
+				<p className="hero-stat">
+					{t.rich('stat', { strong: (chunks) => <strong>{chunks}</strong> })}
+				</p>
+			</motion.div>
 
-      <div className="hero-portrait hero-animation">
-        <Image src={reducedMotion ? '/images/rodrigo-skateboard-still.png' : '/images/rodrigo-skateboard.gif'} alt={t('portraitAlt')} fill priority unoptimized
-          sizes="(max-width: 700px) 100vw, 42vw" />
-      </div>
-    </section>
-  );
+			<motion.div
+				className="hero-portrait"
+				initial={reducedMotion ? false : { opacity: 0, y: 12 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }}
+			>
+				<HeroPortrait
+					alts={[t('portraitAlt'), t('portraitAltIllustration'), t('portraitAltCubist'), t('portraitAltPainterly')]}
+					label={t('portraitToggle')}
+				/>
+			</motion.div>
+		</section>
+	)
 }

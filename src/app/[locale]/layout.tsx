@@ -1,14 +1,18 @@
 import type {Metadata} from 'next';
-import {Geist, Geist_Mono, Twinkle_Star} from 'next/font/google';
+import {DM_Serif_Text, Geist_Mono, Plus_Jakarta_Sans} from 'next/font/google';
+import localFont from 'next/font/local';
 import {hasLocale, NextIntlClientProvider} from 'next-intl';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import '../globals.css';
 
-const geist = Geist({subsets: ['latin'], variable: '--font-geist-sans'});
+const plusJakartaSans = Plus_Jakarta_Sans({subsets: ['latin'], variable: '--font-plus-jakarta-sans', display: 'swap'});
 const geistMono = Geist_Mono({subsets: ['latin'], variable: '--font-geist-mono'});
-const twinkleStar = Twinkle_Star({subsets: ['latin'], weight: '400', variable: '--font-twinkle-star', display: 'swap'});
+const brittanySignature = localFont({src: '../../fonts/BrittanySignature.ttf', weight: '400', variable: '--font-brittany-signature', display: 'swap'});
+const dmSerifText = DM_Serif_Text({subsets: ['latin'], weight: '400', style: ['normal', 'italic'], variable: '--font-dm-serif-text', display: 'swap'});
+
+const themeScript = `(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}document.documentElement.dataset.theme=t}catch(e){}})()`;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
@@ -30,9 +34,13 @@ export default async function RootLayout({children, params}: {
   setRequestLocale(locale);
 
   return (
-    <html lang={locale === 'pt' ? 'pt-BR' : 'en'}>
-      <body className={`${geist.variable} ${geistMono.variable} ${twinkleStar.variable}`}>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+    <html lang={locale === 'pt' ? 'pt-BR' : 'en'} data-theme="dark" suppressHydrationWarning>
+      <head>
+        {/* Applies the saved (or system) theme before the first paint, so there is no flash. */}
+        <script dangerouslySetInnerHTML={{__html: themeScript}} />
+      </head>
+      <body className={`${plusJakartaSans.variable} ${geistMono.variable} ${brittanySignature.variable} ${dmSerifText.variable}`}>
+        <NextIntlClientProvider><div className="page">{children}</div></NextIntlClientProvider>
       </body>
     </html>
   );

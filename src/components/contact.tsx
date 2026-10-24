@@ -2,6 +2,7 @@ import {ArrowUp, ArrowUpRight, Github, Linkedin, Mail} from 'lucide-react';
 import {getTranslations} from 'next-intl/server';
 import {contact} from '@/data/contact';
 import {ScrollReveal} from './scroll-reveal';
+import {Signature} from './signature';
 
 export async function Contact() {
   const t = await getTranslations('Contact');
@@ -32,7 +33,7 @@ export async function Contact() {
       </section>
 
       <ScrollReveal className="contact-bottom" delay={0.15}>
-        <a className="contact-logo" href="#top" aria-label={t('homeLabel')}>Rodrigo Gouveia Estevão</a>
+        <a className="contact-logo" href="#top" aria-label={t('homeLabel')}><Signature /></a>
         <small>© 2026 {contact.name}</small>
       </ScrollReveal>
     </ScrollReveal>

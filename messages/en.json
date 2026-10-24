@@ -1,10 +1,18 @@
 {
 	"Hero": {
-		"greeting": "Hey, I’m Rodrigo",
-		"statement": "Software engineer building <systems>scalable systems</systems> and turning <problems>complex problems</problems> into simple solutions.",
-		"specialties": "BACKEND · ARCHITECTURE · ENGINEERING",
-		"portraitAlt": "Animation of Rodrigo sitting on a skateboard, changing from a sketch into a colored illustration",
+		"name": "Turning ideas into<br></br><mark>real</mark> products",
+		"headline": "Senior Software Developer focused on <serif>solving problems</serif> through <serif>code.</serif>",
+		"downloadCv": "Download CV",
+		"viewProjects": "See projects",
+		"stat": "<strong>7+ years</strong> building software solutions for payments, healthcare, and digital products.",
+		"portraitAlt": "Sketch-style illustration of Rodrigo smiling, with glasses and a beard, lit in orange",
+		"portraitAltIllustration": "Orange-toned illustration of Rodrigo in profile, with glasses, a beard and a slight smile",
+		"portraitAltCubist": "Cubist portrait of Rodrigo with glasses and a beard, in orange and black geometric shapes",
+		"portraitAltPainterly": "Painterly portrait of Rodrigo with glasses and a beard, looking upward",
+		"portraitToggle": "Switch between the illustrations of Rodrigo",
 		"languageLabel": "Select language",
+		"themeToLight": "Switch to light theme",
+		"themeToDark": "Switch to dark theme",
 		"homeLabel": "Rodrigo — home"
 	},
 	"About": {
