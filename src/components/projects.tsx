@@ -51,7 +51,7 @@ export async function Projects() {
               ) : (
                 <div className="project-browser">
                   <div className="browser-toolbar" aria-hidden="true"><i /><i /><i /><span /></div>
-                  <Image src={`/images/projects/${project.id}.png`} alt={t(`${project.id}.imageAlt`)} width={project.id === 'decore' ? 1847 : 1887} height={908} sizes="(max-width: 600px) 85vw, (max-width: 1100px) 45vw, 24vw" />
+                  <Image src={project.id === 'decore' ? '/images/projects/decore-home.png' : `/images/projects/${project.id}.png`} alt={t(`${project.id}.imageAlt`)} width={project.id === 'decore' ? 1904 : 1887} height={project.id === 'decore' ? 905 : 908} sizes="(max-width: 600px) 85vw, (max-width: 1100px) 45vw, 24vw" />
                 </div>
               )}
             </div>
