@@ -49,25 +49,35 @@
 			"category": "APLICATIVO DE HÁBITOS",
 			"description": "Um aplicativo moderno e minimalista para acompanhar hábitos, desenvolvido para ajudar você a criar consistência e alcançar seus objetivos, um dia de cada vez.",
 			"note": "Construa dias melhores",
-			"imageAlt": "Tela do Stepp com hábitos de leitura, corrida, academia e viagem e seu histórico de conclusões"
+			"imageAlt": "Tela do Stepp com hábitos de leitura, corrida, academia e viagem e seu histórico de conclusões",
+			"summary": "App para criar hábitos e acompanhar sua consistência, um dia de cada vez.",
+			"shotHome": "Tela inicial do Stepp com os hábitos e os dias concluídos na semana",
+			"shotNew": "Tela do Stepp para criar um novo hábito",
+			"shotDetail": "Histórico mensal de um hábito no Stepp, com dias concluídos e melhor sequência"
 		},
 		"decore": {
 			"category": "EXPERIÊNCIA WEB",
 			"description": "Um site para apresentar e comercializar artes em madeira feitas à mão, com foco na experiência de navegação e na apresentação dos produtos.",
 			"note": "Feito à mão, com propósito",
-			"imageAlt": "Página inicial da Decorê Arts com artes personalizadas em madeira"
+			"imageAlt": "Página inicial da Decorê Arts com artes personalizadas em madeira",
+			"summary": "Site para apresentar e vender artes em madeira feitas à mão."
 		},
 		"glic": {
 			"category": "APLICATIVO DE SAÚDE",
 			"description": "Um aplicativo mobile para acompanhar medições de glicose, com classificação automática, histórico e relatórios para apoiar o acompanhamento médico.",
 			"note": "Acompanhe sua saúde",
-			"imageAlt": "Tela do Glic com listagem de medidas de glicose e botão para baixar relatório"
+			"imageAlt": "Tela do Glic com listagem de medidas de glicose e botão para baixar relatório",
+			"summary": "App para registrar a glicemia, com classificação automática, histórico e relatórios.",
+			"shotLogin": "Tela de login do Glic",
+			"shotList": "Listagem de medições de glicose no Glic, classificadas como baixo, alto e normal",
+			"shotNew": "Tela do Glic para cadastrar uma nova medição de glicemia"
 		},
 		"specialday": {
 			"category": "PRODUTO DIGITAL",
 			"description": "Uma plataforma para criar cartões digitais personalizados, transformando mensagens e fotos em experiências memoráveis para diferentes ocasiões.",
 			"note": "Transforme momentos em memórias",
-			"imageAlt": "Página inicial do SpecialDayGiftCard para criar presentes digitais personalizados"
+			"imageAlt": "Página inicial do SpecialDayGiftCard para criar presentes digitais personalizados",
+			"summary": "Plataforma para criar cartões digitais personalizados com fotos e mensagens."
 		}
 	},
 	"Experience": {

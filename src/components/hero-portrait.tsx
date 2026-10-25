@@ -94,7 +94,7 @@ export function HeroPortrait({ alts, label }: Props) {
 		const to = frames.current[next].data
 		const started = performance.now()
 		const draw = (now: number) => {
-			const elapsed = clamp((now - started) / 2400)
+			const elapsed = clamp((now - started) / 1200)
 			const threshold = -0.07 + smooth(elapsed) * 1.2
 			for (let pixel = 0; pixel < field.current.length; pixel++) {
 				const distance = field.current[pixel] - threshold
@@ -123,7 +123,7 @@ export function HeroPortrait({ alts, label }: Props) {
 
 	useEffect(() => {
 		if (!ready || reducedMotion || hovering) return
-		const timer = window.setTimeout(transition, 5200)
+		const timer = window.setTimeout(transition, 3000)
 		return () => window.clearTimeout(timer)
 	}, [ready, current, reducedMotion, hovering, transition])
 

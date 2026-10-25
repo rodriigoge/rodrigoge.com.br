@@ -9,16 +9,24 @@ function ProjectLink({url, children}: {url: string | null; children: React.React
   return <a className="project-link" href={url} target="_blank" rel="noopener noreferrer"><span>{children}</span><ArrowUpRight size={18} aria-hidden="true" /></a>;
 }
 
-function Sketch() {
-  return (
-    <svg className="project-sketch" viewBox="0 0 340 310" fill="none" aria-hidden="true">
-      <path d="M45 68 C40 92 58 104 85 104 M77 96 L86 104 L77 112" />
-      <path d="M279 34 L284 22 M292 43 L306 32 M295 54 L309 53" />
-      <path d="M48 178 L37 173 M47 189 L33 194 M52 201 L42 211" />
-      <path d="M286 198 C305 199 313 211 310 225" />
-    </svg>
-  );
-}
+const appScreens = {
+  stepp: {
+    size: [720, 1600],
+    screens: [
+      {key: 'shotDetail', src: '/images/projects/stepp-detail.webp', position: 'left'},
+      {key: 'shotHome', src: '/images/projects/stepp-home.webp', position: 'center'},
+      {key: 'shotNew', src: '/images/projects/stepp-new.webp', position: 'right'}
+    ]
+  },
+  glic: {
+    size: [478, 1030],
+    screens: [
+      {key: 'shotLogin', src: '/images/projects/glic-login.webp', position: 'left'},
+      {key: 'shotList', src: '/images/projects/glic-list.webp', position: 'center'},
+      {key: 'shotNew', src: '/images/projects/glic-new.webp', position: 'right'}
+    ]
+  }
+} as const;
 
 export async function Projects() {
   const t = await getTranslations('Projects');
@@ -34,38 +42,53 @@ export async function Projects() {
       </ScrollReveal>
 
       <div className="projects-grid">
-        {projects.map((project, index) => (
-          <ScrollReveal as="article" key={project.id} className={`project-card project-${project.id}`} aria-labelledby={`project-${project.id}-title`} delay={index * 0.1}>
-            <svg className="project-scribble" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
-              <path pathLength="1" vectorEffect="non-scaling-stroke" d="M28 7 C240 3 590 11 964 6 Q990 5 991 24 C987 67 996 126 990 177 Q987 193 968 191 C699 197 344 188 32 194 Q9 195 10 177 C14 115 5 61 11 25 Q12 8 35 9" />
-              <path pathLength="1" vectorEffect="non-scaling-stroke" d="M54 11 C301 7 653 13 959 10 Q985 9 985 29 L987 174 Q985 188 964 187 C652 193 317 185 37 190 Q15 190 16 172 L15 29 Q16 13 38 13" />
-            </svg>
-            <div className="project-artwork">
-              <span className="project-note" aria-hidden="true">{t(`${project.id}.note`)}</span>
-              <Sketch />
-              {project.id === 'glic' || project.id === 'stepp' ? (
-                <div className={`project-phone ${project.id}-phone`}>
-                  <div className="phone-camera" />
-                  <Image src={`/images/projects/${project.id}.png`} alt={t(`${project.id}.imageAlt`)} width={project.id === 'stepp' ? 720 : 473} height={project.id === 'stepp' ? 1600 : 1028} sizes="220px" />
+        {projects.map((project, index) =>
+          project.id === 'stepp' || project.id === 'glic' ? (
+            <ScrollReveal as="article" key={project.id} className={`project-card project-card-web project-card-app project-${project.id}`} aria-labelledby={`project-${project.id}-title`} delay={index * 0.1}>
+              <div className="project-devices">
+                {appScreens[project.id].screens.map((screen) => (
+                  <figure key={screen.key} className={`project-device project-device-${screen.position}`}>
+                    <span className="project-device-island" aria-hidden="true" />
+                    <Image src={screen.src} alt={t(`${project.id}.${screen.key}`)} width={appScreens[project.id].size[0]} height={appScreens[project.id].size[1]} sizes="260px" unoptimized />
+                  </figure>
+                ))}
+              </div>
+              <div className="project-web-footer">
+                <div className="project-web-text">
+                  <h3 id={`project-${project.id}-title`}>{project.name}</h3>
+                  <p>{t(`${project.id}.summary`)}</p>
                 </div>
-              ) : (
-                <div className="project-browser">
-                  <div className="browser-toolbar" aria-hidden="true"><i /><i /><i /><span /></div>
-                  <Image src={project.id === 'decore' ? '/images/projects/decore-home.png' : `/images/projects/${project.id}.png`} alt={t(`${project.id}.imageAlt`)} width={project.id === 'decore' ? 1904 : 1887} height={project.id === 'decore' ? 905 : 908} sizes="(max-width: 600px) 85vw, (max-width: 1100px) 45vw, 24vw" />
+                <a className="project-web-button" href={project.url} target="_blank" rel="noopener noreferrer">
+                  {t('github')}
+                  <ArrowUpRight size={16} aria-hidden="true" />
+                </a>
+              </div>
+            </ScrollReveal>
+          ) : project.id === 'decore' || project.id === 'specialday' ? (
+            <ScrollReveal as="article" key={project.id} className={`project-card project-card-web project-${project.id}`} aria-labelledby={`project-${project.id}-title`} delay={index * 0.1}>
+              <div className="project-web-shot">
+                <Image
+                  src={project.id === 'decore' ? '/images/projects/decore-home-hq.webp' : '/images/projects/specialday-hq.webp'}
+                  alt={t(`${project.id}.imageAlt`)}
+                  width={2880}
+                  height={project.id === 'decore' ? 1370 : 1386}
+                  sizes="(max-width: 700px) 90vw, 1000px"
+                  unoptimized
+                />
+              </div>
+              <div className="project-web-footer">
+                <div className="project-web-text">
+                  <h3 id={`project-${project.id}-title`}>{project.name}</h3>
+                  <p>{t(`${project.id}.summary`)}</p>
                 </div>
-              )}
-            </div>
-            <div className="project-content">
-              <p className="project-category"><span>{project.number}</span> / {t(`${project.id}.category`)}</p>
-              <h3 id={`project-${project.id}-title`}>{project.name}</h3>
-              <p className="project-description">{t(`${project.id}.description`)}</p>
-              <ul className="project-tags" aria-label={t('technologies')}>
-                {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
-              </ul>
-              <ProjectLink url={project.url}>{t(project.id === 'glic' || project.id === 'stepp' ? 'github' : 'visit')}</ProjectLink>
-            </div>
-          </ScrollReveal>
-        ))}
+                <a className="project-web-button" href={project.url} target="_blank" rel="noopener noreferrer">
+                  {t('visit')}
+                  <ArrowUpRight size={16} aria-hidden="true" />
+                </a>
+              </div>
+            </ScrollReveal>
+          ) : null
+        )}
       </div>
     </ScrollReveal>
   );
