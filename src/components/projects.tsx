@@ -37,6 +37,11 @@ export async function Projects() {
           <p className="projects-eyebrow"><span>01</span> / {t('eyebrow')}</p>
           <h2 id="projects-heading">{t('titleLine1')} {t('titleLine2')}</h2>
           <p className="projects-intro">{t('intro')}</p>
+          <nav className="projects-tags" aria-label={t('jumpTo')}>
+            {projects.map((project) => (
+              <a key={project.id} className="projects-tag" href={`#project-${project.id}`}>{project.name}</a>
+            ))}
+          </nav>
         </div>
         <ProjectLink url={allProjectsUrl}>{t('viewAll')}</ProjectLink>
       </ScrollReveal>
@@ -44,7 +49,7 @@ export async function Projects() {
       <div className="projects-grid">
         {projects.map((project, index) =>
           project.id === 'stepp' || project.id === 'glic' ? (
-            <ScrollReveal as="article" key={project.id} className={`project-card project-card-web project-card-app project-${project.id}`} aria-labelledby={`project-${project.id}-title`} delay={index * 0.1}>
+            <ScrollReveal as="article" key={project.id} id={`project-${project.id}`} className={`project-card project-card-web project-card-app project-${project.id}`} aria-labelledby={`project-${project.id}-title`} delay={index * 0.1}>
               <div className="project-devices">
                 {appScreens[project.id].screens.map((screen) => (
                   <figure key={screen.key} className={`project-device project-device-${screen.position}`}>
@@ -65,7 +70,7 @@ export async function Projects() {
               </div>
             </ScrollReveal>
           ) : project.id === 'decore' || project.id === 'specialday' ? (
-            <ScrollReveal as="article" key={project.id} className={`project-card project-card-web project-${project.id}`} aria-labelledby={`project-${project.id}-title`} delay={index * 0.1}>
+            <ScrollReveal as="article" key={project.id} id={`project-${project.id}`} className={`project-card project-card-web project-${project.id}`} aria-labelledby={`project-${project.id}-title`} delay={index * 0.1}>
               <div className="project-web-shot">
                 <Image
                   src={project.id === 'decore' ? '/images/projects/decore-home-hq.webp' : '/images/projects/specialday-hq.webp'}
@@ -83,6 +88,25 @@ export async function Projects() {
                 </div>
                 <a className="project-web-button" href={project.url} target="_blank" rel="noopener noreferrer">
                   {t('visit')}
+                  <ArrowUpRight size={16} aria-hidden="true" />
+                </a>
+              </div>
+            </ScrollReveal>
+          ) : project.id === 'libretto' ? (
+            <ScrollReveal as="article" key={project.id} id={`project-${project.id}`} className={`project-card project-card-web project-${project.id}`} aria-labelledby={`project-${project.id}-title`} delay={index * 0.1}>
+              <div className="project-web-shot">
+                <Image src="/images/projects/libretto-chat.webp" alt={t('libretto.imageAlt')} width={883} height={902} sizes="(max-width: 700px) 90vw, 1000px" unoptimized />
+              </div>
+              <div className="project-libretto-avatar">
+                <Image src="/images/projects/libretto-avatar.webp" alt={t('libretto.avatarAlt')} width={480} height={462} sizes="200px" unoptimized />
+              </div>
+              <div className="project-web-footer">
+                <div className="project-web-text">
+                  <h3 id={`project-${project.id}-title`}>{project.name}</h3>
+                  <p>{t(`${project.id}.summary`)}</p>
+                </div>
+                <a className="project-web-button" href={project.url} target="_blank" rel="noopener noreferrer">
+                  {t('github')}
                   <ArrowUpRight size={16} aria-hidden="true" />
                 </a>
               </div>

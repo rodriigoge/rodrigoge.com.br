@@ -43,9 +43,16 @@
 		"titleLine2": "built with purpose.",
 		"intro": "Ideas I turned into real products to learn, solve problems and create value.",
 		"viewAll": "View all projects",
+		"jumpTo": "Jump to project",
 		"github": "View on GitHub",
 		"visit": "Visit website",
 		"technologies": "Project technologies and areas",
+		"libretto": {
+			"category": "AUTOMATION BOT",
+			"summary": "A bot that collects FreeStyle Libre readings and delivers the monthly glucose spreadsheet via Telegram and email.",
+			"imageAlt": "Telegram chat with the Libretto bot answering /status and sending the monthly glucose spreadsheets",
+			"avatarAlt": "Illustration of the Libretto bot avatar"
+		},
 		"stepp": {
 			"category": "HABIT-TRACKING APPLICATION",
 			"description": "A modern and minimalist habit-tracking application designed to help you build consistency and reach your goals, one day at a time.",

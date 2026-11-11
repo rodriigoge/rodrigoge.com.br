@@ -42,9 +42,16 @@
 		"titleLine2": "criados com propósito.",
 		"intro": "Ideias que transformei em produtos reais para aprender, resolver problemas e criar valor.",
 		"viewAll": "Ver todos os projetos",
+		"jumpTo": "Ir para o projeto",
 		"github": "Ver no GitHub",
 		"visit": "Visitar site",
 		"technologies": "Tecnologias e áreas do projeto",
+		"libretto": {
+			"category": "BOT DE AUTOMAÇÃO",
+			"summary": "Bot que coleta as leituras do FreeStyle Libre e envia a planilha mensal de glicose pelo Telegram e e-mail.",
+			"imageAlt": "Conversa no Telegram com o bot Libretto respondendo /status e enviando as planilhas mensais de glicose",
+			"avatarAlt": "Ilustração do avatar do bot Libretto"
+		},
 		"stepp": {
 			"category": "APLICATIVO DE HÁBITOS",
 			"description": "Um aplicativo moderno e minimalista para acompanhar hábitos, desenvolvido para ajudar você a criar consistência e alcançar seus objetivos, um dia de cada vez.",
