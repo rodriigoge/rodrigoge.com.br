@@ -53,15 +53,15 @@
 			"imageAlt": "Telegram chat with the Libretto bot answering /status and sending the monthly glucose spreadsheets",
 			"avatarAlt": "Illustration of the Libretto bot avatar"
 		},
-		"stepp": {
+		"ritmo": {
 			"category": "HABIT-TRACKING APPLICATION",
 			"description": "A modern and minimalist habit-tracking application designed to help you build consistency and reach your goals, one day at a time.",
 			"note": "Build better days",
-			"imageAlt": "Stepp screen showing reading, running, gym and travel habits with their completion history",
+			"imageAlt": "Ritmo home screen showing gym and prayer habits with their weekly completion history",
 			"summary": "An app to build habits and track your consistency, one day at a time.",
-			"shotHome": "Stepp home screen with habits and the days completed this week",
-			"shotNew": "Stepp screen for creating a new habit",
-			"shotDetail": "Monthly history of a habit in Stepp, with completed days and best streak"
+			"shotHome": "Ritmo home screen with habits and the days completed this week",
+			"shotProfile": "Ritmo profile screen with theme, notification and habit import/export settings",
+			"shotDetail": "Monthly history of a habit in Ritmo, with completed days and best streak"
 		},
 		"decore": {
 			"category": "WEB EXPERIENCE",

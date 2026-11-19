@@ -38,7 +38,7 @@
 	--tag-bg: #22282d;
 	--tag-fg: #e1e6ec;
 	--phone-border: #6f95bb;
-	--stepp-border: #91aa85;
+	--ritmo-border: #91aa85;
 	--shadow: #00000080;
 	--chip-bg: #2a2724;
 	--web-card-bg: #141415;
@@ -77,7 +77,7 @@
 	--tag-bg: #eeebe2;
 	--tag-fg: #2e2b27;
 	--phone-border: #4a77a8;
-	--stepp-border: #5a8a47;
+	--ritmo-border: #5a8a47;
 	--shadow: #1b1a1724;
 	--chip-bg: #ebe7dd;
 	--web-card-bg: #efeee9;
@@ -94,7 +94,7 @@
 :root[data-theme='light'] .project-specialday {
 	--project-accent: #96489a;
 }
-:root[data-theme='light'] .project-stepp {
+:root[data-theme='light'] .project-ritmo {
 	--project-accent: #4b7a3a;
 }
 :root {
@@ -800,11 +800,11 @@ a:focus-visible {
 .project-specialday {
 	--project-accent: #dba5dc;
 }
-.project-stepp {
+.project-ritmo {
 	--project-accent: #b7d6a6;
 }
-.project-phone.stepp-phone {
-	border-color: var(--stepp-border);
+.project-phone.ritmo-phone {
+	border-color: var(--ritmo-border);
 }
 .project-artwork {
 	position: relative;

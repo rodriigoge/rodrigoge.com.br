@@ -10,12 +10,12 @@ function ProjectLink({url, children}: {url: string | null; children: React.React
 }
 
 const appScreens = {
-  stepp: {
+  ritmo: {
     size: [720, 1600],
     screens: [
-      {key: 'shotDetail', src: '/images/projects/stepp-detail.webp', position: 'left'},
-      {key: 'shotHome', src: '/images/projects/stepp-home.webp', position: 'center'},
-      {key: 'shotNew', src: '/images/projects/stepp-new.webp', position: 'right'}
+      {key: 'shotDetail', src: '/images/projects/ritmo-detail.webp', position: 'left'},
+      {key: 'shotHome', src: '/images/projects/ritmo-home.webp', position: 'center'},
+      {key: 'shotProfile', src: '/images/projects/ritmo-profile.webp', position: 'right'}
     ]
   },
   glic: {
@@ -48,7 +48,7 @@ export async function Projects() {
 
       <div className="projects-grid">
         {projects.map((project, index) =>
-          project.id === 'stepp' || project.id === 'glic' ? (
+          project.id === 'ritmo' || project.id === 'glic' ? (
             <ScrollReveal as="article" key={project.id} id={`project-${project.id}`} className={`project-card project-card-web project-card-app project-${project.id}`} aria-labelledby={`project-${project.id}-title`} delay={index * 0.1}>
               <div className="project-devices">
                 {appScreens[project.id].screens.map((screen) => (

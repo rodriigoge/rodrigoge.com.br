@@ -52,15 +52,15 @@
 			"imageAlt": "Conversa no Telegram com o bot Libretto respondendo /status e enviando as planilhas mensais de glicose",
 			"avatarAlt": "Ilustração do avatar do bot Libretto"
 		},
-		"stepp": {
+		"ritmo": {
 			"category": "APLICATIVO DE HÁBITOS",
 			"description": "Um aplicativo moderno e minimalista para acompanhar hábitos, desenvolvido para ajudar você a criar consistência e alcançar seus objetivos, um dia de cada vez.",
 			"note": "Construa dias melhores",
-			"imageAlt": "Tela do Stepp com hábitos de leitura, corrida, academia e viagem e seu histórico de conclusões",
+			"imageAlt": "Tela inicial do Ritmo com os hábitos de musculação e oração e o histórico semanal de conclusões",
 			"summary": "App para criar hábitos e acompanhar sua consistência, um dia de cada vez.",
-			"shotHome": "Tela inicial do Stepp com os hábitos e os dias concluídos na semana",
-			"shotNew": "Tela do Stepp para criar um novo hábito",
-			"shotDetail": "Histórico mensal de um hábito no Stepp, com dias concluídos e melhor sequência"
+			"shotHome": "Tela inicial do Ritmo com os hábitos e os dias concluídos na semana",
+			"shotProfile": "Tela de perfil do Ritmo com configurações de tema, notificações e exportação/importação de hábitos",
+			"shotDetail": "Histórico mensal de um hábito no Ritmo, com dias concluídos e melhor sequência"
 		},
 		"decore": {
 			"category": "EXPERIÊNCIA WEB",
